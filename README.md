@@ -80,3 +80,5 @@ continue update
 ```
 
 #### If you have any questions, please contact [yuangao24@mails.tsinghua.edu.cn](mailto:yuangao24@mails.tsinghua.edu.cn).
+
+#### Acknowledgment: This code is based on the [NVIDIA modulus](https://github.com/NVIDIA/modulus).
