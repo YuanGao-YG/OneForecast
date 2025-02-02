@@ -70,12 +70,13 @@ continue update
 
 ## Citation
 
+'''
 @article{gao2025oneforecast,
   title={OneForecast: A Universal Framework for Global and Regional Weather Forecasting},
   author={Gao Yuan, Wu Hao, Shu Ruiqi, Dong Huanshuo, Xu Fan, Chen Rui, Yan Yibo, Wen Qingsong, Hu Xuming, Wang Kun, Wu Jiahao, Li Qing, Hui Xiong, and Huang Xiaomeng},
   journal={xx},
   year={2024}
 }
-
+'''
 
 #### If you have any questions, please contact [yuangao24@mails.tsinghua.edu.cn](mailto:yuangao24@mails.tsinghua.edu.cn).
