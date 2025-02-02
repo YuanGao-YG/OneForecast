@@ -3,7 +3,7 @@
 <img src="https://github.com/gy65896/OneRestore/blob/main/img_file/logo_onerestore.png" width="200">
 </div>
 
- # <p align=center> [ECCV 2024] OneRestore: A Universal Restoration Framework for Composite Degradation</p>
+ # <p align=center> OneForecast: A Universal Framework for Global and Regional Weather Forecasting</p>
 
 
 <div align="center">
