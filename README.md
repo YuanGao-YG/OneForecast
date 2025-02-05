@@ -74,7 +74,7 @@ continue update
 @article{gao2025oneforecast,
   title={OneForecast: A Universal Framework for Global and Regional Weather Forecasting},
   author={Gao Yuan, Wu Hao, Shu Ruiqi, Dong Huanshuo, Xu Fan, Chen Rui, Yan Yibo, Wen Qingsong, Hu Xuming, Wang Kun, Wu Jiahao, Li Qing, Hui Xiong, and Huang Xiaomeng},
-  journal={xx},
+  journal={arXiv:2502.00338},
   year={2024}
 }
 ```
