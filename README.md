@@ -18,7 +18,7 @@
 ## News 🚀
 
 * **2025.02.03**: Codes for models are released.
-* **2025.02.03**: Paper is released on ArXiv.
+* **2025.02.03**: Paper is released on [ArXiv](http://arxiv.org/abs/2502.00338).
 
 ## Quick Start
 
