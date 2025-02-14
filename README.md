@@ -36,15 +36,15 @@ continue update
 
 ## Training
 ### Global Forecasts
-**1. Prepare Data **
-**2. Model Training **
+**1. Prepare Data**
+**2. Model Training**
 - **Single GPU Training**
 - **Single-node Multi-GPU Training**
 - **Multi-node Multi-GPU Training**
 
 ### Regional Forecasts
-**1. Prepare Data **
-**2. Model Training **
+**1. Prepare Data**
+**2. Model Training**
 - **Single GPU Training**
 - **Single-node Multi-GPU Training**
 - **Multi-node Multi-GPU Training**
