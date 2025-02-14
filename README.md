@@ -37,7 +37,26 @@ continue update
 ## Training
 ### Global Forecasts
 **1. Prepare Data**
+Preparing the train, valid, and test data as follows:
+
+```
+./data/
+|--train
+|  |--1959.h5
+|  |--1960.h5
+|  |--......
+|  |--2016.h5
+|  |--2017.h5
+|--valid
+|  |--2018.h5
+|  |--2019.h5
+|--test
+|  |--2020.h5
+```
+
 **2. Model Training**
+
+
 - **Single GPU Training**
 - **Single-node Multi-GPU Training**
 - **Multi-node Multi-GPU Training**
