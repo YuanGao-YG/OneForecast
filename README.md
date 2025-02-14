@@ -37,7 +37,13 @@ continue update
 ## Training
 ### Global Forecasts
 #### Prepare Dataset
+#### Training
+- **Single GPU Training**
+- **Single-node Multi-GPU Training**
+- **Multi-node Multi-GPU Training**
 
+### Regional Forecasts
+#### Prepare Dataset
 #### Training
 - **Single GPU Training**
 - **Single-node Multi-GPU Training**
@@ -45,7 +51,6 @@ continue update
 
 
 ## Performance
-
 ### Global Forecasting
 
 </div>
