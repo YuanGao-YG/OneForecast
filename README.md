@@ -37,6 +37,7 @@ continue update
 ## Training
 ### Global Forecasts
 **1. Prepare Data**
+
 Preparing the train, valid, and test data as follows:
 
 ```
@@ -63,6 +64,7 @@ Preparing the train, valid, and test data as follows:
 
 ### Regional Forecasts
 **1. Prepare Data**
+
 Preparing the train, valid, and test data as follows:
 
 ```
@@ -87,7 +89,7 @@ Preparing the train, valid, and test data as follows:
 
 
 ## Performance
-### Global Forecasting
+### Global Forecasts
 
 </div>
 <div align=center>
@@ -104,14 +106,14 @@ Preparing the train, valid, and test data as follows:
 <img src="img/fig_visual.jpg" width="1080">
 </div>
 
-### Regional Forecasting
+### Regional Forecasts
 
 </div>
 <div align=center>
 <img src="img/fig_region.jpg" width="1080">
 </div>
 
-### Extreme Event Forecasting
+### Extreme Event Forecasts
 
 </div>
 <div align=center>
@@ -124,8 +126,8 @@ Preparing the train, valid, and test data as follows:
 ```
 @article{gao2025oneforecast,
   title={OneForecast: A Universal Framework for Global and Regional Weather Forecasting},
-  author={Gao Yuan, Wu Hao, Shu Ruiqi, Dong Huanshuo, Xu Fan, Chen Rui, Yan Yibo, Wen Qingsong, Hu Xuming, Wang Kun, Wu Jiahao, Li Qing, Hui Xiong, and Huang Xiaomeng},
-  journal={arXiv:2502.00338},
+  author={Gao, Yuan and Wu, Hao and Shu, Ruiqi and Dong, Huanshuo and Xu, Fan and Chen, Rui and Yan, Yibo and Wen, Qingsong and Hu, Xuming and Wang, Kun and others},
+  journal={arXiv preprint arXiv:2502.00338},
   year={2025}
 }
 ```
