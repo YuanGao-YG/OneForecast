@@ -1,0 +1,458 @@
+validating...
+Val loss improved from 1000000.0 to 0.03276964649558067
+Time taken for epoch 1 is 8916.952506065369 sec
+train data time=0.008540630340576172, train per epoch time=8875.163356542587, train per step time=1.6493520454455655, valid time=29.871203422546387
+Train loss: 0.1611626297235489. Valid loss: 0.03276964649558067
+validating...
+Val loss improved from 0.03276964649558067 to 0.026663824915885925
+Time taken for epoch 2 is 8944.998767614365 sec
+train data time=0.008017301559448242, train per epoch time=8903.753098964691, train per step time=1.6546651363993108, valid time=29.20536756515503
+Train loss: 0.14451050758361816. Valid loss: 0.026663824915885925
+validating...
+Time taken for epoch 3 is 8928.084164381027 sec
+train data time=0.008528470993041992, train per epoch time=8890.051685333252, train per step time=1.6521188785231837, valid time=29.237448692321777
+Train loss: 0.16813784837722778. Valid loss: 0.038394611328840256
+validating...
+Time taken for epoch 4 is 8936.957183361053 sec
+train data time=0.00872492790222168, train per epoch time=8898.757638454437, train per step time=1.6537367846969777, valid time=29.24869155883789
+Train loss: 0.1704026460647583. Valid loss: 0.03854769840836525
+validating...
+Time taken for epoch 5 is 8939.496152877808 sec
+train data time=0.00838017463684082, train per epoch time=8901.531761169434, train per step time=1.6542523250640093, valid time=28.967817068099976
+Train loss: 0.15903449058532715. Valid loss: 0.032690513879060745
+validating...
+Time taken for epoch 6 is 8915.919835329056 sec
+train data time=0.008487462997436523, train per epoch time=8878.111535310745, train per step time=1.6498999322264905, valid time=28.814656019210815
+Train loss: 0.15584206581115723. Valid loss: 0.03165413439273834
+validating...
+Val loss improved from 0.026663824915885925 to 0.024182697758078575
+Time taken for epoch 7 is 8906.348393440247 sec
+train data time=0.00829005241394043, train per epoch time=8866.28228020668, train per step time=1.647701594537573, valid time=28.1739501953125
+Train loss: 0.13929545879364014. Valid loss: 0.024182697758078575
+validating...
+Time taken for epoch 8 is 8714.077281951904 sec
+train data time=0.00829935073852539, train per epoch time=8675.85863995552, train per step time=1.6123134435895783, valid time=29.563230514526367
+Train loss: 0.1423206925392151. Valid loss: 0.024409951642155647
+validating...
+Val loss improved from 0.024182697758078575 to 0.023832816630601883
+Time taken for epoch 9 is 8725.600883722305 sec
+train data time=0.008229970932006836, train per epoch time=8684.9069647789, train per step time=1.6139949757998329, valid time=28.325563430786133
+Train loss: 0.1403774470090866. Valid loss: 0.023832816630601883
+validating...
+Time taken for epoch 10 is 8717.45173573494 sec
+train data time=0.008379936218261719, train per epoch time=8680.335474967957, train per step time=1.6131454144151565, valid time=28.182634353637695
+Train loss: 0.13434302806854248. Valid loss: 0.023930935189127922
+validating...
+Val loss improved from 0.023832816630601883 to 0.023567084223031998
+Time taken for epoch 11 is 8652.788283109665 sec
+train data time=0.008324861526489258, train per epoch time=8612.222456216812, train per step time=1.6004873548070642, valid time=28.239078998565674
+Train loss: 0.13574394583702087. Valid loss: 0.023567084223031998
+validating...
+Time taken for epoch 12 is 8695.123939037323 sec
+train data time=0.008412361145019531, train per epoch time=8657.51502943039, train per step time=1.6089044841907432, valid time=28.26816439628601
+Train loss: 0.15401406586170197. Valid loss: 0.02615189179778099
+validating...
+Time taken for epoch 13 is 8821.607114076614 sec
+train data time=0.00854635238647461, train per epoch time=8772.627754449844, train per step time=1.6302969251904562, valid time=37.805132150650024
+Train loss: 0.14304494857788086. Valid loss: 0.026040947064757347
+validating...
+Time taken for epoch 14 is 12721.479106426239 sec
+train data time=0.008593082427978516, train per epoch time=12673.20416688919, train per step time=2.35517639228567, valid time=37.56704664230347
+Train loss: 0.1472739577293396. Valid loss: 0.027596494182944298
+validating...
+Time taken for epoch 15 is 12705.435160160065 sec
+train data time=0.008659839630126953, train per epoch time=12656.45603632927, train per step time=2.352063935389197, valid time=37.73265886306763
+Train loss: 0.14754191040992737. Valid loss: 0.02738119289278984
+validating...
+Time taken for epoch 16 is 12738.208279371262 sec
+train data time=0.008351802825927734, train per epoch time=12689.367461442947, train per step time=2.358180163806532, valid time=37.73001837730408
+Train loss: 0.1417531967163086. Valid loss: 0.02593919076025486
+validating...
+Time taken for epoch 17 is 12755.303706407547 sec
+train data time=0.00863194465637207, train per epoch time=12707.603111028671, train per step time=2.3615690598455066, valid time=37.56359028816223
+Train loss: 0.14599522948265076. Valid loss: 0.025282228365540504
+validating...
+Time taken for epoch 18 is 12749.995253562927 sec
+train data time=0.00839376449584961, train per epoch time=12701.557941198349, train per step time=2.36044563114632, valid time=38.20697808265686
+Train loss: 0.14838844537734985. Valid loss: 0.025622529909014702
+validating...
+Time taken for epoch 19 is 12736.24271273613 sec
+train data time=0.008124351501464844, train per epoch time=12688.008603572845, train per step time=2.3579276349326976, valid time=37.72292160987854
+Train loss: 0.13900190591812134. Valid loss: 0.024829041212797165
+validating...
+Time taken for epoch 20 is 12751.970950841904 sec
+train data time=0.008331060409545898, train per epoch time=12705.552067995071, train per step time=2.3611878959292087, valid time=36.62692832946777
+Train loss: 0.1414545476436615. Valid loss: 0.024591811001300812
+validating...
+Time taken for epoch 21 is 12780.203525543213 sec
+train data time=0.008326292037963867, train per epoch time=12732.304867744446, train per step time=2.3661596111771876, valid time=37.72010946273804
+Train loss: 0.13934239745140076. Valid loss: 0.024606099352240562
+validating...
+Time taken for epoch 22 is 12745.042627096176 sec
+train data time=0.00849461555480957, train per epoch time=12697.030079841614, train per step time=2.3596041776327104, valid time=37.453731536865234
+Train loss: 0.14087577164173126. Valid loss: 0.026996806263923645
+validating...
+Time taken for epoch 23 is 12779.866916418076 sec
+train data time=0.008174657821655273, train per epoch time=12731.648581981659, train per step time=2.366037647645727, valid time=37.80686688423157
+Train loss: 0.13852578401565552. Valid loss: 0.02708055078983307
+validating...
+Time taken for epoch 24 is 12727.091439962387 sec
+train data time=0.00849461555480957, train per epoch time=12678.976422786713, train per step time=2.356249102915204, valid time=37.42738223075867
+Train loss: 0.1452890932559967. Valid loss: 0.02708994224667549
+validating...
+Time taken for epoch 25 is 12716.292290449142 sec
+train data time=0.008383750915527344, train per epoch time=12667.593838691711, train per step time=2.354133774148246, valid time=37.689552783966064
+Train loss: 0.13418561220169067. Valid loss: 0.025718173012137413
+validating...
+Time taken for epoch 26 is 12739.56185245514 sec
+train data time=0.008379220962524414, train per epoch time=12691.170996427536, train per step time=2.358515331058825, valid time=37.76561784744263
+Train loss: 0.1402549147605896. Valid loss: 0.025884035974740982
+validating...
+Time taken for epoch 27 is 12724.263209342957 sec
+train data time=0.00858163833618164, train per epoch time=12676.206253528595, train per step time=2.355734297254896, valid time=37.408897399902344
+Train loss: 0.13956204056739807. Valid loss: 0.02823135256767273
+validating...
+Time taken for epoch 28 is 12726.016236543655 sec
+train data time=0.008472681045532227, train per epoch time=12677.553961515427, train per step time=2.3559847540448664, valid time=37.74130630493164
+Train loss: 0.14093968272209167. Valid loss: 0.02761801704764366
+validating...
+Time taken for epoch 29 is 12805.81392455101 sec
+train data time=0.008573293685913086, train per epoch time=12757.558465957642, train per step time=2.3708527162158783, valid time=37.608152627944946
+Train loss: 0.14396372437477112. Valid loss: 0.026295334100723267
+validating...
+Val loss improved from 1000000.0 to 0.02814897708594799
+Time taken for epoch 30 is 3931.7824835777283 sec
+train data time=0.012099742889404297, train per epoch time=3895.3731985092163, train per step time=0.723912506691919, valid time=27.529474020004272
+Train loss: 0.1418219804763794. Valid loss: 0.02814897708594799
+validating...
+Val loss improved from 0.02814897708594799 to 0.025642206892371178
+Time taken for epoch 31 is 3890.2654287815094 sec
+train data time=0.011361360549926758, train per epoch time=3862.3278205394745, train per step time=0.7177713846012775, valid time=19.63383197784424
+Train loss: 0.13748733699321747. Valid loss: 0.025642206892371178
+validating...
+Val loss improved from 0.025642206892371178 to 0.024895936250686646
+Time taken for epoch 32 is 3900.39155292511 sec
+train data time=0.010736465454101562, train per epoch time=3871.644121170044, train per step time=0.7195027171845464, valid time=20.104816913604736
+Train loss: 0.1352924406528473. Valid loss: 0.024895936250686646
+validating...
+Time taken for epoch 33 is 3867.415351867676 sec
+train data time=0.010152816772460938, train per epoch time=3840.7413890361786, train per step time=0.7137597823891801, valid time=21.229710817337036
+Train loss: 0.1391717493534088. Valid loss: 0.02524089813232422
+validating...
+Time taken for epoch 34 is 3819.301999807358 sec
+train data time=0.010650396347045898, train per epoch time=3793.995626926422, train per step time=0.7050725937421338, valid time=19.67317509651184
+Train loss: 0.16661331057548523. Valid loss: 0.03606795147061348
+validating...
+Time taken for epoch 35 is 3884.3990547657013 sec
+train data time=0.009790182113647461, train per epoch time=3854.7668595314026, train per step time=0.7163662626893519, valid time=24.150303840637207
+Train loss: 0.1420343816280365. Valid loss: 0.026110662147402763
+validating...
+Time taken for epoch 36 is 3862.1931626796722 sec
+train data time=0.011435747146606445, train per epoch time=3835.2839601039886, train per step time=0.7127455789080076, valid time=21.260377645492554
+Train loss: 0.13289189338684082. Valid loss: 0.02561657316982746
+validating...
+Val loss improved from 0.024895936250686646 to 0.024567384272813797
+Time taken for epoch 37 is 3894.7686343193054 sec
+train data time=0.01074981689453125, train per epoch time=3862.6087987422943, train per step time=0.7178236013273173, valid time=23.76345992088318
+Train loss: 0.13789914548397064. Valid loss: 0.024567384272813797
+validating...
+Time taken for epoch 38 is 3837.903020143509 sec
+train data time=0.011174917221069336, train per epoch time=3808.260395050049, train per step time=0.7077235448894348, valid time=23.94275403022766
+Train loss: 0.1311120092868805. Valid loss: 0.024770449846982956
+validating...
+Time taken for epoch 39 is 3857.9474925994873 sec
+train data time=0.010761737823486328, train per epoch time=3830.2578585147858, train per step time=0.711811532896262, valid time=22.010313749313354
+Train loss: 0.13509805500507355. Valid loss: 0.024771397933363914
+validating...
+Time taken for epoch 40 is 3928.1510651111603 sec
+train data time=0.010675191879272461, train per epoch time=3900.700088262558, train per step time=0.7249024508943612, valid time=21.785176753997803
+Train loss: 0.13778448104858398. Valid loss: 0.02473982237279415
+validating...
+Time taken for epoch 41 is 3834.2776041030884 sec
+train data time=0.010985612869262695, train per epoch time=3808.9954528808594, train per step time=0.7078601473482363, valid time=19.589730978012085
+Train loss: 0.14578311145305634. Valid loss: 0.03230725973844528
+validating...
+Time taken for epoch 42 is 3831.3141527175903 sec
+train data time=0.010982751846313477, train per epoch time=3806.357050180435, train per step time=0.7073698290615936, valid time=19.412050247192383
+Train loss: 0.1543963998556137. Valid loss: 0.0284783523529768
+validating...
+Time taken for epoch 43 is 3780.100807905197 sec
+train data time=0.011444330215454102, train per epoch time=3754.581422328949, train per step time=0.6977478948762217, valid time=19.854165077209473
+Train loss: 0.19575285911560059. Valid loss: 0.04362238198518753
+validating...
+Time taken for epoch 44 is 3787.0756883621216 sec
+train data time=0.010965824127197266, train per epoch time=3761.5196285247803, train per step time=0.6990372846171307, valid time=19.895190238952637
+Train loss: 0.17300555109977722. Valid loss: 0.0649951696395874
+validating...
+Time taken for epoch 45 is 3836.307383775711 sec
+train data time=0.011355161666870117, train per epoch time=3811.2750301361084, train per step time=0.7082837818502339, valid time=19.331892251968384
+Train loss: 0.14390958845615387. Valid loss: 0.026633433997631073
+validating...
+Time taken for epoch 46 is 3798.9250605106354 sec
+train data time=0.010868072509765625, train per epoch time=3773.7535049915314, train per step time=0.7013108167611097, valid time=19.658586263656616
+Train loss: 0.12924514710903168. Valid loss: 0.0277447197586298
+validating...
+Time taken for epoch 47 is 3826.994106054306 sec
+train data time=0.01159048080444336, train per epoch time=3800.8526422977448, train per step time=0.7063468950562618, valid time=20.456427812576294
+Train loss: 0.14563500881195068. Valid loss: 0.02855444699525833
+validating...
+Time taken for epoch 48 is 3858.9152574539185 sec
+train data time=0.01070261001586914, train per epoch time=3833.599536180496, train per step time=0.7124325471437458, valid time=19.65548014640808
+Train loss: 0.14073145389556885. Valid loss: 0.02655506692826748
+validating...
+Time taken for epoch 49 is 3866.022850036621 sec
+train data time=0.011160612106323242, train per epoch time=3840.2549107074738, train per step time=0.7136693757122233, valid time=19.99745535850525
+Train loss: 0.1324210911989212. Valid loss: 0.02528189867734909
+validating...
+Time taken for epoch 50 is 3827.481188774109 sec
+train data time=0.010101079940795898, train per epoch time=3802.689604282379, train per step time=0.7066882743509346, valid time=19.339847326278687
+Train loss: 0.13719876110553741. Valid loss: 0.025487499311566353
+validating...
+Time taken for epoch 51 is 3740.9477841854095 sec
+train data time=0.011337518692016602, train per epoch time=3715.330645799637, train per step time=0.6904535673294252, valid time=19.9073383808136
+Train loss: 0.1662454456090927. Valid loss: 0.03355413302779198
+validating...
+Time taken for epoch 52 is 3857.7428731918335 sec
+train data time=0.011110544204711914, train per epoch time=3832.6758415699005, train per step time=0.7122608886024717, valid time=19.429922342300415
+Train loss: 0.12973923981189728. Valid loss: 0.02538750320672989
+validating...
+Time taken for epoch 53 is 3866.4774544239044 sec
+train data time=0.011041402816772461, train per epoch time=3841.5328063964844, train per step time=0.713906858650155, valid time=19.33512592315674
+Train loss: 0.13905443251132965. Valid loss: 0.027384966611862183
+validating...
+Time taken for epoch 54 is 3840.8787620067596 sec
+train data time=0.011479854583740234, train per epoch time=3815.5034079551697, train per step time=0.7090695796237074, valid time=19.69479465484619
+Train loss: 0.14772750437259674. Valid loss: 0.02813437208533287
+validating...
+Time taken for epoch 55 is 3844.443672180176 sec
+train data time=0.011146068572998047, train per epoch time=3818.9324078559875, train per step time=0.7097068217535751, valid time=19.734100580215454
+Train loss: 0.13519573211669922. Valid loss: 0.025968942791223526
+validating...
+Val loss improved from 0.024567384272813797 to 0.024441640824079514
+Time taken for epoch 56 is 3826.932018995285 sec
+train data time=0.01133275032043457, train per epoch time=3798.8246359825134, train per step time=0.7059700122621285, valid time=19.482656717300415
+Train loss: 0.13121142983436584. Valid loss: 0.024441640824079514
+validating...
+Time taken for epoch 57 is 3749.280922651291 sec
+train data time=0.010646343231201172, train per epoch time=3724.095668077469, train per step time=0.6920824508599644, valid time=19.64844799041748
+Train loss: 0.14810729026794434. Valid loss: 0.026058463379740715
+validating...
+Time taken for epoch 58 is 3805.9357855319977 sec
+train data time=0.011179685592651367, train per epoch time=3780.239823102951, train per step time=0.7025162280436631, valid time=20.200000524520874
+Train loss: 0.13378985226154327. Valid loss: 0.025208566337823868
+validating...
+Time taken for epoch 59 is 3830.3876519203186 sec
+train data time=0.010685205459594727, train per epoch time=3799.88596701622, train per step time=0.7061672490273593, valid time=24.917386770248413
+Train loss: 0.12507733702659607. Valid loss: 0.024589788168668747
+validating...
+Val loss improved from 0.024441640824079514 to 0.023654818534851074
+Time taken for epoch 60 is 3770.792341709137 sec
+train data time=0.0112762451171875, train per epoch time=3742.8266813755035, train per step time=0.6955634048272632, valid time=19.39359712600708
+Train loss: 0.13220061361789703. Valid loss: 0.023654818534851074
+validating...
+Time taken for epoch 61 is 3828.901449918747 sec
+train data time=0.011214733123779297, train per epoch time=3803.6588459014893, train per step time=0.7068683973056104, valid time=19.561647415161133
+Train loss: 0.12621816992759705. Valid loss: 0.024734772741794586
+validating...
+Time taken for epoch 62 is 3835.8282146453857 sec
+train data time=0.009950637817382812, train per epoch time=3810.689049720764, train per step time=0.7081748837986924, valid time=19.61981463432312
+Train loss: 0.13863304257392883. Valid loss: 0.025116922333836555
+validating...
+Time taken for epoch 63 is 3841.1611697673798 sec
+train data time=0.011291265487670898, train per epoch time=3815.7265639305115, train per step time=0.7091110507211507, valid time=19.767197608947754
+Train loss: 0.139278382062912. Valid loss: 0.026749277487397194
+validating...
+Time taken for epoch 64 is 3748.4181427955627 sec
+train data time=0.01001119613647461, train per epoch time=3723.2725434303284, train per step time=0.6919294821465022, valid time=19.503458499908447
+Train loss: 0.14450159668922424. Valid loss: 0.026142777875065804
+validating...
+Time taken for epoch 65 is 3788.5559964179993 sec
+train data time=0.009753942489624023, train per epoch time=3763.4468495845795, train per step time=0.6993954375737929, valid time=19.499513864517212
+Train loss: 0.139007568359375. Valid loss: 0.02545642852783203
+validating...
+Time taken for epoch 66 is 3840.599130153656 sec
+train data time=0.009395599365234375, train per epoch time=3815.4027009010315, train per step time=0.7090508643190915, valid time=19.722776174545288
+Train loss: 0.1406669020652771. Valid loss: 0.027369897812604904
+validating...
+Time taken for epoch 67 is 3801.584843635559 sec
+train data time=0.010807991027832031, train per epoch time=3776.4116504192352, train per step time=0.7018048040176984, valid time=19.625780820846558
+Train loss: 0.13792425394058228. Valid loss: 0.025936897844076157
+validating...
+Time taken for epoch 68 is 3848.1762742996216 sec
+train data time=0.011446714401245117, train per epoch time=3823.073046207428, train per step time=0.7104763141065653, valid time=19.45733094215393
+Train loss: 0.13911649584770203. Valid loss: 0.02604537643492222
+validating...
+Time taken for epoch 69 is 3737.694747686386 sec
+train data time=0.010828018188476562, train per epoch time=3712.594382286072, train per step time=0.6899450626809277, valid time=19.39151406288147
+Train loss: 0.13675834238529205. Valid loss: 0.024364320561289787
+validating...
+Time taken for epoch 70 is 3772.1309146881104 sec
+train data time=0.010963201522827148, train per epoch time=3746.568380355835, train per step time=0.6962587586611847, valid time=19.806551456451416
+Train loss: 0.1376459300518036. Valid loss: 0.02527892030775547
+validating...
+Time taken for epoch 71 is 3831.1512322425842 sec
+train data time=0.01077580451965332, train per epoch time=3805.895820379257, train per step time=0.7072841145473439, valid time=19.531071186065674
+Train loss: 0.1304241120815277. Valid loss: 0.02409491315484047
+validating...
+Time taken for epoch 72 is 3870.706069469452 sec
+train data time=0.00984644889831543, train per epoch time=3845.752979040146, train per step time=0.7146911315815175, valid time=19.433595180511475
+Train loss: 0.14360858500003815. Valid loss: 0.029807258397340775
+validating...
+Time taken for epoch 73 is 3769.482971906662 sec
+train data time=0.011058330535888672, train per epoch time=3744.3628923892975, train per step time=0.6958488928432072, valid time=19.456735134124756
+Train loss: 0.12951184809207916. Valid loss: 0.024065637961030006
+validating...
+Time taken for epoch 74 is 3841.3262119293213 sec
+train data time=0.010916948318481445, train per epoch time=3816.1785633563995, train per step time=0.7091950498711019, valid time=19.569555044174194
+Train loss: 0.140910804271698. Valid loss: 0.025716964155435562
+validating...
+Time taken for epoch 75 is 3863.176960706711 sec
+train data time=0.011420965194702148, train per epoch time=3837.8130016326904, train per step time=0.7132155736169281, valid time=19.689475059509277
+Train loss: 0.1440807282924652. Valid loss: 0.026142491027712822
+validating...
+Time taken for epoch 76 is 3868.2096252441406 sec
+train data time=0.011718034744262695, train per epoch time=3843.332110643387, train per step time=0.7142412396661191, valid time=19.21335196495056
+Train loss: 0.13922332227230072. Valid loss: 0.024677040055394173
+validating...
+Time taken for epoch 77 is 3815.6243934631348 sec
+train data time=0.011292695999145508, train per epoch time=3790.3886864185333, train per step time=0.7044022832965124, valid time=19.56663751602173
+Train loss: 0.13287726044654846. Valid loss: 0.024622073397040367
+validating...
+Time taken for epoch 78 is 3906.497771501541 sec
+train data time=0.011186838150024414, train per epoch time=3880.9105961322784, train per step time=0.7212247902122799, valid time=19.99232840538025
+Train loss: 0.12999437749385834. Valid loss: 0.024197489023208618
+validating...
+Time taken for epoch 79 is 3927.664792537689 sec
+train data time=0.011038064956665039, train per epoch time=3902.4035143852234, train per step time=0.7252190140095193, valid time=19.615691661834717
+Train loss: 0.13408660888671875. Valid loss: 0.023923035711050034
+validating...
+Time taken for epoch 80 is 3811.410003900528 sec
+train data time=0.010997772216796875, train per epoch time=3786.3274388313293, train per step time=0.7036475448487882, valid time=19.39568305015564
+Train loss: 0.13555318117141724. Valid loss: 0.02448248490691185
+validating...
+Time taken for epoch 81 is 3846.274498939514 sec
+train data time=0.010875701904296875, train per epoch time=3821.2625527381897, train per step time=0.7101398536960025, valid time=19.318087816238403
+Train loss: 0.13308608531951904. Valid loss: 0.023950498551130295
+validating...
+Time taken for epoch 82 is 3877.762818813324 sec
+train data time=0.011093854904174805, train per epoch time=3851.0843167304993, train per step time=0.715681902384408, valid time=20.88693928718567
+Train loss: 0.13665643334388733. Valid loss: 0.02543334662914276
+validating...
+Time taken for epoch 83 is 3863.018130540848 sec
+train data time=0.010845184326171875, train per epoch time=3837.9347398281097, train per step time=0.7132381973291414, valid time=19.50665807723999
+Train loss: 0.13880662620067596. Valid loss: 0.024400833994150162
+validating...
+Time taken for epoch 84 is 3766.0207777023315 sec
+train data time=0.010489702224731445, train per epoch time=3740.408944129944, train per step time=0.695114094802071, valid time=20.004538536071777
+Train loss: 0.1340074986219406. Valid loss: 0.024227090179920197
+validating...
+Val loss improved from 0.023654818534851074 to 0.02356625907123089
+Time taken for epoch 85 is 3810.0788807868958 sec
+train data time=0.01095724105834961, train per epoch time=3781.693742990494, train per step time=0.7027864231537807, valid time=19.976958990097046
+Train loss: 0.13096784055233002. Valid loss: 0.02356625907123089
+validating...
+Val loss improved from 0.02356625907123089 to 0.023211531341075897
+Time taken for epoch 86 is 3890.8746979236603 sec
+train data time=0.01145792007446289, train per epoch time=3862.8509950637817, train per step time=0.7178686108648544, valid time=19.484596252441406
+Train loss: 0.1340012550354004. Valid loss: 0.023211531341075897
+validating...
+Time taken for epoch 87 is 3913.820122241974 sec
+train data time=0.010642051696777344, train per epoch time=3888.3853006362915, train per step time=0.7226138822962817, valid time=19.776841640472412
+Train loss: 0.14295408129692078. Valid loss: 0.026641877368092537
+validating...
+Time taken for epoch 88 is 3801.130922317505 sec
+train data time=0.011140584945678711, train per epoch time=3775.843939781189, train per step time=0.7016993012044581, valid time=19.60440182685852
+Train loss: 0.12969538569450378. Valid loss: 0.023648392409086227
+validating...
+Time taken for epoch 89 is 3889.7823655605316 sec
+train data time=0.011027812957763672, train per epoch time=3864.716621875763, train per step time=0.7182153172041931, valid time=19.464812994003296
+Train loss: 0.1348901093006134. Valid loss: 0.023643728345632553
+validating...
+Time taken for epoch 90 is 3862.3963861465454 sec
+train data time=0.011058330535888672, train per epoch time=3836.8553931713104, train per step time=0.7130376125573891, valid time=19.790403127670288
+Train loss: 0.15264686942100525. Valid loss: 0.03159010782837868
+validating...
+Time taken for epoch 91 is 3843.215662717819 sec
+train data time=0.01050424575805664, train per epoch time=3818.150449037552, train per step time=0.7095615032591622, valid time=19.517380237579346
+Train loss: 0.1324799656867981. Valid loss: 0.023595163598656654
+validating...
+Time taken for epoch 92 is 3818.3242847919464 sec
+train data time=0.010833501815795898, train per epoch time=3793.263299703598, train per step time=0.7049364987369631, valid time=19.33400845527649
+Train loss: 0.13628056645393372. Valid loss: 0.024263596162199974
+validating...
+Val loss improved from 0.023211531341075897 to 0.023000037297606468
+Time taken for epoch 93 is 3863.335104942322 sec
+train data time=0.010748147964477539, train per epoch time=3835.6743545532227, train per step time=0.7128181294467985, valid time=19.22063159942627
+Train loss: 0.13209128379821777. Valid loss: 0.023000037297606468
+validating...
+Val loss improved from 0.023000037297606468 to 0.022824766114354134
+Time taken for epoch 94 is 3841.013321876526 sec
+train data time=0.011234283447265625, train per epoch time=3813.0235726833344, train per step time=0.7086087293594748, valid time=19.559956312179565
+Train loss: 0.12909023463726044. Valid loss: 0.022824766114354134
+validating...
+Val loss improved from 0.022824766114354134 to 0.02270554006099701
+Time taken for epoch 95 is 3824.2519705295563 sec
+train data time=0.010991096496582031, train per epoch time=3796.162876844406, train per step time=0.7054753534369831, valid time=19.501767873764038
+Train loss: 0.130372554063797. Valid loss: 0.02270554006099701
+validating...
+Time taken for epoch 96 is 3878.4404628276825 sec
+train data time=0.011509895324707031, train per epoch time=3852.863795518875, train per step time=0.7160125990557286, valid time=19.792738676071167
+Train loss: 0.13592888414859772. Valid loss: 0.022864118218421936
+validating...
+Val loss improved from 0.02270554006099701 to 0.02248242311179638
+Time taken for epoch 97 is 3853.3908190727234 sec
+train data time=0.01089930534362793, train per epoch time=3824.401660680771, train per step time=0.7107232225758727, valid time=20.197859525680542
+Train loss: 0.1315402388572693. Valid loss: 0.02248242311179638
+validating...
+Time taken for epoch 98 is 3853.7733080387115 sec
+train data time=0.010466575622558594, train per epoch time=3828.472252845764, train per step time=0.7114796976111809, valid time=19.587119340896606
+Train loss: 0.12958413362503052. Valid loss: 0.022625712677836418
+validating...
+Time taken for epoch 99 is 3844.923715353012 sec
+train data time=0.01127481460571289, train per epoch time=3819.280715942383, train per step time=0.7097715510021154, valid time=19.81170964241028
+Train loss: 0.13559040427207947. Valid loss: 0.02312309481203556
+validating...
+Time taken for epoch 100 is 3830.153742313385 sec
+train data time=0.011314630508422852, train per epoch time=3805.249068260193, train per step time=0.7071639227393036, valid time=19.207979679107666
+Train loss: 0.13049960136413574. Valid loss: 0.02310321293771267
+validating...
+Time taken for epoch 101 is 3850.825016975403 sec
+train data time=0.01094508171081543, train per epoch time=3825.7730617523193, train per step time=0.7109780824665154, valid time=19.303678274154663
+Train loss: 0.13148421049118042. Valid loss: 0.0233086496591568
+validating...
+Val loss improved from 0.02248242311179638 to 0.022470558062195778
+Time taken for epoch 102 is 3836.4069604873657 sec
+train data time=0.01118016242980957, train per epoch time=3807.9901428222656, train per step time=0.7076733214685497, valid time=19.78159523010254
+Train loss: 0.12714311480522156. Valid loss: 0.022470558062195778
+validating...
+Time taken for epoch 103 is 3830.5579750537872 sec
+train data time=0.011055231094360352, train per epoch time=3805.2889964580536, train per step time=0.7071713429581962, valid time=19.64730978012085
+Train loss: 0.1312377154827118. Valid loss: 0.022752851247787476
+validating...
+Time taken for epoch 104 is 3859.259444475174 sec
+train data time=0.011242151260375977, train per epoch time=3833.455080509186, train per step time=0.7124057016370908, valid time=20.132771492004395
+Train loss: 0.13305366039276123. Valid loss: 0.023600727319717407
+validating...
+Time taken for epoch 105 is 3834.802903652191 sec
+train data time=0.011113166809082031, train per epoch time=3808.9481122493744, train per step time=0.7078513496096217, valid time=20.309752941131592
+Train loss: 0.1332797110080719. Valid loss: 0.02264881134033203
+validating...
+Time taken for epoch 106 is 3901.6825387477875 sec
+train data time=0.011147260665893555, train per epoch time=3876.6826646327972, train per step time=0.7204390753824191, valid time=19.40434455871582
+Train loss: 0.13634854555130005. Valid loss: 0.023663625121116638
+validating...
+Time taken for epoch 107 is 3882.2870173454285 sec
+train data time=0.010155439376831055, train per epoch time=3856.780169248581, train per step time=0.7167404142814683, valid time=19.897038459777832
+Train loss: 0.12830092012882233. Valid loss: 0.02328602224588394
+validating...
+Time taken for epoch 108 is 3870.1457669734955 sec
+train data time=0.011139869689941406, train per epoch time=3845.289549589157, train per step time=0.7146050082864072, valid time=19.214367151260376
+Train loss: 0.12783190608024597. Valid loss: 0.022951021790504456
+validating...
+Time taken for epoch 109 is 3873.6226949691772 sec
+train data time=0.011066913604736328, train per epoch time=3848.125504016876, train per step time=0.7151320394010177, valid time=19.82503390312195
+Train loss: 0.1322018951177597. Valid loss: 0.023028850555419922
+validating...
+Time taken for epoch 110 is 3813.425769329071 sec
+train data time=0.010778427124023438, train per epoch time=3788.303690433502, train per step time=0.7040148095955217, valid time=19.50230646133423
+Train loss: 0.1310379058122635. Valid loss: 0.022575661540031433
