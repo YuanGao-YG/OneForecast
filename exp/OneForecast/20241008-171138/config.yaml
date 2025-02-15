@@ -8,14 +8,14 @@ full_field: &FULL_FIELD
   prediction_length: 41    
   ics_type: "default"   
 
-  exp_dir: '/jizhicfs/Prometheus/gaoyuan/llm/ft_local/OneForecast_github/exp'
+  exp_dir: 'your_paths/exp'
   
-  test_data_path:  '/jizhicfs/Prometheus/gaoyuan/llm/ft_local/OneForecast_github/data/global/test'
+  test_data_path:  'your_paths/data/global/test'
 
   normalize: !!bool True
   normalization: 'zscore'
-  global_means_path: '/jizhicfs/Prometheus/gaoyuan/llm/ft_local/OneForecast_github/data/global/mean.npy' 
-  global_stds_path:  '/jizhicfs/Prometheus/gaoyuan/llm/ft_local/OneForecast_github/data/global/std.npy' 
+  global_means_path: 'your_paths/data/global/mean.npy' 
+  global_stds_path:  'your_paths/data/global/std.npy' 
 
 #############################################
 OneForecast: &OneForecast
