@@ -66,7 +66,7 @@ Preparing the train, valid, and test data as follows:
 |  |--2020.h5
 ```
 
-Each h5 file includes the variable named 'fields' with the shape [T, C, H, W] (T=1460/1464, C=69, H=121, W=240)
+Each h5 file includes a variable named 'fields' with the shape [T, C, H, W] (T=1460/1464, C=69, H=121, W=240)
 
 **2. Model Training**
 
