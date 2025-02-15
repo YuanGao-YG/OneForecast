@@ -1,1 +1,0 @@
-Please put pre-trained weights in this folder
