@@ -188,9 +188,9 @@ if __name__ == '__main__':
 
     # Set up directory
     if args.finetune_dir == '':
-        expDir = os.path.join('/jizhicfs/Prometheus/gaoyuan/llm/ft_local/OneForecast', params.exp_dir, args.config, str(args.run_num))
+        expDir = os.path.join('your_paths', params.exp_dir, args.config, str(args.run_num))
     else:
-        expDir = os.path.join('/jizhicfs/Prometheus/gaoyuan/llm/ft_local/OneForecast', params.exp_dir, args.config, str(args.run_num), args.finetune_dir)
+        expDir = os.path.join('your_paths', params.exp_dir, args.config, str(args.run_num), args.finetune_dir)
     logging.info(f'expDir: {expDir}')
     params['experiment_dir']       = expDir 
     params['best_checkpoint_path'] = os.path.join(expDir, 'training_checkpoints/ckpt_OneForecast.tar')
