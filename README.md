@@ -28,7 +28,10 @@ continue update
 
 ### Pretrained Models
 
-continue update
+| Model | OneDrive | Description
+| :--- | :--- | :----------
+|ckpt_OneForecast.tar | [model]([https://1drv.ms/u/s!As3rCDROnrbLgqpnhSQFIoD9msXWOA?e=aUpHOT](https://1drv.ms/u/s!AvMfp6yKSwiXbcQcHdcPJvSGG_Q?e=UBrb1o)) | Pre-trained weights of OneForecast.
+
 
 ### Inference
 
