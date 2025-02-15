@@ -35,8 +35,16 @@ continue update
 
 ### Inference
 
-continue update
+1. Global Inference
 
+```
+sh inference.sh
+```
+
+2. Regional Inference
+
+continue update
+   
 ## Training
 ### Global Forecasts
 **1. Prepare Data**
