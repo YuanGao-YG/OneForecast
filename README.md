@@ -126,7 +126,7 @@ Preparing the train, valid, and test data as follows:
 <img src="img/fig_region.jpg" width="1080">
 </div>
 
-### Extreme Event Forecasts
+### Extreme Event Forecasts (Typhoon)
 
 </div>
 <div align=center>
