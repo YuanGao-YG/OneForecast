@@ -23,7 +23,7 @@
 
 ## Quick Start
 
-### Install
+### Installation
 
 - cuda 11.8
 
