@@ -25,7 +25,17 @@
 
 ### Install
 
-continue update
+- cuda 11.8
+
+```
+# git clone this repository
+git clone https://github.com/YuanGao-YG/OneForecast.git
+cd OneForecast
+
+# create new anaconda env
+conda env create -f environment.yml
+conda activate oneforecast
+```
 
 ### Pretrained Models
 
