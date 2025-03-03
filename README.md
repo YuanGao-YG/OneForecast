@@ -3,6 +3,10 @@
  
  # <p align=center> OneForecast: A Universal Framework for Global and Regional Weather Forecasting</p>
 
+ <div align="center">
+ 
+[![ArXiv](https://img.shields.io/badge/OneForecast-ArXiv-red.svg)](https://arxiv.org/abs/2502.00338)
+
 </div>
 <div align=center>
 <img src="img/fig_main.jpg" width="1080">
