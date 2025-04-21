@@ -45,7 +45,7 @@ conda activate oneforecast
 
 | Model | OneDrive | Description
 | :--- | :--- | :----------
-|ckpt_OneForecast.tar | [model](https://1drv.ms/u/s!AvMfp6yKSwiXbcQcHdcPJvSGG_Q?e=UBrb1o) | Pre-trained weights of OneForecast.
+|ckpt_OneForecast.tar | [model](https://1drv.ms/u/c/97084b8aaca71ff3/EWNTOv40tSVNorc_rJ-qg3oBRDiZWujcoOoVZoPOexUrJw?e=weecOd) | Pre-trained weights of OneForecast.
 
 
 ### Inference
