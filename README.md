@@ -21,6 +21,7 @@
 ---
 
 ## News 🚀
+* **2025.05.01**: OneForecast is accepted by [ICML 2025](https://icml.cc/).
 * **2025.02.15**: Inference codes and pre-trained weights are released.
 * **2025.02.03**: Codes for models are released.
 * **2025.02.01**: Paper is released on [ArXiv](http://arxiv.org/abs/2502.00338).
