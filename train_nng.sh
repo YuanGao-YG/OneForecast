@@ -14,7 +14,7 @@ export NODE_RANK=0  # 主节点的rank是0
 
 # 设置NCCL环境变量
 source ~/.bashrc
-conda activate yuan
+conda activate oneforecast
 export NCCL_IB_GID_INDEX=3
 export NCCL_IB_SL=3
 export NCCL_CHECK_DISABLE=1
@@ -44,7 +44,7 @@ nohup torchrun --nproc_per_node=8 --nnodes=2 --node_rank=$NODE_RANK --master_add
 
 ssh root@30.207.98.112 "
 source ~/.bashrc; \
-conda activate yuan; \
+conda activate oneforecast; \
 
 # 设置与主节点相同的NCCL环境变量
 export NCCL_IB_GID_INDEX=3
