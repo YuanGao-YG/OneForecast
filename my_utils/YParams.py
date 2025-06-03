@@ -1,3 +1,5 @@
+# coding: utf-8
+
 import importlib
 import sys
 import os
@@ -16,7 +18,7 @@ class YParams():
     if print_params:
       print(os.system('hostname'))
       print("------------------ Configuration ------------------ ", yaml_filename)
-    print(yaml_filename)
+
     with open(yaml_filename, 'rb') as _file:
       yaml = YAML().load(_file)
       for key, val in yaml[config_name].items():

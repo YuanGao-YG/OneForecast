@@ -1031,7 +1031,7 @@ from torch import Tensor
 
 
 
-class OneForecastEncoderEmbedder(nn.Module):
+class NNGEncoderEmbedder(nn.Module):
 
     def __init__(
         self,
@@ -1107,7 +1107,7 @@ class OneForecastEncoderEmbedder(nn.Module):
         return grid_nfeat, mesh_nfeat, g2m_efeat, mesh_efeat
 
 
-class OneForecastDecoderEmbedder(nn.Module):
+class NNGDecoderEmbedder(nn.Module):
 
     def __init__(
         self,
@@ -2737,7 +2737,7 @@ from dgl import DGLGraph
 from torch import Tensor
 
 
-class OneForecastProcessor(nn.Module):
+class NNGProcessor(nn.Module):
   
     def __init__(
         self,
@@ -2825,7 +2825,7 @@ class OneForecastProcessor(nn.Module):
         return efeat, nfeat
 
 
-class OneForecastProcessorGraphTransformer(nn.Module):
+class NNGProcessorGraphTransformer(nn.Module):
 
     def __init__(
         self,
@@ -2944,7 +2944,7 @@ def get_lat_lon_partition_separators(partition_size: int):
 
 @dataclass
 class MetaData(ModelMetaData):
-    name: str = "OneForecast"
+    name: str = "NNG"
     # Optimization
     jit: bool = False
     cuda_graphs: bool = False
@@ -2960,7 +2960,7 @@ class MetaData(ModelMetaData):
     auto_grad: bool = False
 
 
-class OneForecast(Module):
+class NNG(Module):
 
     def __init__(
         self,
@@ -2969,16 +2969,16 @@ class OneForecast(Module):
         multimesh_level: Optional[int] = None,
         multimesh: bool = True,
         input_res: tuple = (120, 240),
-        input_dim_grid_nodes: int = 69,
+        input_dim_grid_nodes: int = 6,
         input_dim_mesh_nodes: int = 3,
         input_dim_edges: int = 4,
-        output_dim_grid_nodes: int = 69,
+        output_dim_grid_nodes: int = 2,
         processor_type: str = "MessagePassing",
         khop_neighbors: int = 32,
         num_attention_heads: int = 4,
         processor_layers: int = 16,
         hidden_layers: int = 1,
-        hidden_dim: int = 512,
+        hidden_dim: int = 128,
         aggregation: str = "sum",
         activation_fn: str = "silu",
         norm_type: str = "LayerNorm",
@@ -3032,7 +3032,7 @@ class OneForecast(Module):
         activation_fn = get_activation(activation_fn)
 
         # construct the graph
-        self.graph = Graph(self.lat_lon_grid, mesh_level, multimesh, khop_neighbors, do_local_refine=True, refine_specs=[
+        self.graph = Graph(self.lat_lon_grid, mesh_level, multimesh, khop_neighbors, do_local_refine=False, refine_specs=[
         (0.0, 30.0, 105.0, 160.0, 1),(10.0, 30.0, -95.0, -35.0, 1),], complex_edge = False, lon_lat_complex_edge=[(23.5, -88.7, 25.1, -80.2),(37.0, -75.0, 33.0, -73.0),
     ])
 
@@ -3137,7 +3137,7 @@ class OneForecast(Module):
         self.decoder_checkpoint_fn = set_checkpoint_fn(False)
 
         # initial feature embedder
-        self.encoder_embedder = OneForecastEncoderEmbedder(
+        self.encoder_embedder = NNGEncoderEmbedder(
             input_dim_grid_nodes=input_dim_grid_nodes,
             input_dim_mesh_nodes=input_dim_mesh_nodes,
             input_dim_edges=input_dim_edges,
@@ -3148,7 +3148,7 @@ class OneForecast(Module):
             norm_type=norm_type,
             recompute_activation=recompute_activation,
         )
-        self.decoder_embedder = OneForecastDecoderEmbedder(
+        self.decoder_embedder = NNGDecoderEmbedder(
             input_dim_edges=input_dim_edges,
             output_dim=hidden_dim,
             hidden_dim=hidden_dim,
@@ -3179,7 +3179,7 @@ class OneForecast(Module):
         if processor_layers <= 2:
             raise ValueError("Expected at least 3 processor layers")
         if processor_type == "MessagePassing":
-            self.processor_encoder = OneForecastProcessor(
+            self.processor_encoder = NNGProcessor(
                 aggregation=aggregation,
                 processor_layers=1,
                 input_dim_nodes=hidden_dim,
@@ -3191,7 +3191,7 @@ class OneForecast(Module):
                 do_concat_trick=do_concat_trick,
                 recompute_activation=recompute_activation,
             )
-            self.processor = OneForecastProcessor(
+            self.processor = NNGProcessor(
                 aggregation=aggregation,
                 processor_layers=processor_layers - 2,
                 input_dim_nodes=hidden_dim,
@@ -3203,7 +3203,7 @@ class OneForecast(Module):
                 do_concat_trick=do_concat_trick,
                 recompute_activation=recompute_activation,
             )
-            self.processor_decoder = OneForecastProcessor(
+            self.processor_decoder = NNGProcessor(
                 aggregation=aggregation,
                 processor_layers=1,
                 input_dim_nodes=hidden_dim,
@@ -3217,7 +3217,7 @@ class OneForecast(Module):
             )
         else:
             self.processor_encoder = torch.nn.Identity()
-            self.processor = OneForecastProcessorGraphTransformer(
+            self.processor = NNGProcessorGraphTransformer(
                 attention_mask=self.attn_mask,
                 num_attention_heads=num_attention_heads,
                 processor_layers=processor_layers,
@@ -3418,7 +3418,7 @@ class OneForecast(Module):
 
         if not self.is_distributed:
             if invar.size(0) != 1:
-                raise ValueError("OneForecast does not support batch size > 1")
+                raise ValueError("NNG does not support batch size > 1")
             invar = invar[0].view(self.input_dim_grid_nodes, -1).permute(1, 0)
 
         else:
@@ -3426,7 +3426,7 @@ class OneForecast(Module):
             if not expect_partitioned_input:
                 # global_features_on_rank_0
                 if invar.size(0) != 1:
-                    raise ValueError("OneForecast does not support batch size > 1")
+                    raise ValueError("NNG does not support batch size > 1")
 
                 invar = invar[0].view(self.input_dim_grid_nodes, -1).permute(1, 0)
 
@@ -3461,7 +3461,7 @@ class OneForecast(Module):
 
     def to(self, *args: Any, **kwargs: Any) -> Self:
         
-        self = super(OneForecast, self).to(*args, **kwargs)
+        self = super(NNG, self).to(*args, **kwargs)
 
         self.g2m_edata = self.g2m_edata.to(*args, **kwargs)
         self.m2g_edata = self.m2g_edata.to(*args, **kwargs)
@@ -3479,7 +3479,7 @@ class OneForecast(Module):
 
 #     device = "cuda" if torch.cuda.is_available() else "cpu"
     
-#     net = OneForecast().to(device)
+#     net = NNG().to(device)
 
 #     input = torch.randn(1, 69, 120, 240).to(device)
 #     output = net(input)

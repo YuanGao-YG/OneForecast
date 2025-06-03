@@ -1,0 +1,193 @@
+### base config ###
+# -*- coding: utf-8 -*-
+full_field: &FULL_FIELD
+  loss: 'l2'
+  lr: 1E-3
+  max_epochs: 300
+  batch_size: 64
+  scheduler: 'ReduceLROnPlateau'
+  num_data_workers: 0
+  dt: 1                     # how many timesteps ahead the model will predict
+  n_history: 0              # how many previous timesteps to consider
+  prediction_type: 'iterative'
+  prediction_length: 41     # applicable only if prediction_type == 'iterative'
+  n_initial_conditions: 5   # applicable only if prediction_type == 'iterative'
+  ics_type: "default"       # default or datetime
+  date_strings: ["2018-09-14 00:00:00"]
+  save_raw_forecasts: !!bool True
+  save_channel: !!bool False
+  masked_acc: !!bool False
+  maskpath: None
+  perturb: !!bool False
+  add_grid: !!bool False
+  N_grid_channels: 0
+  gridtype: 'sinusoidal'    # options 'sinusoidal' or 'linear'
+  roll: !!bool False
+  enable_nhwc: !!bool False
+  optimizer_type: 'FusedAdam'
+
+  # directory path to store training checkpoints and other output
+  exp_dir: './exp'
+      
+  # afno hyperparams
+  num_blocks: 8         # original:8
+  nettype: 'afno_backbone'
+  patch_size: 8
+  width: 56
+  modes: 32
+  target: 'default'     # options default, residual 
+  in_channels: [0,1]
+  out_channels: [0,1]   # must be same as in_channels if prediction_type == 'iterative'
+
+  # data
+  train_data_path: '/home/bingxing2/home/scx6811/Ocean_AI_model/sample_00/train'
+  valid_data_path: '/home/bingxing2/home/scx6811/Ocean_AI_model/sample_00/valid'  
+  test_data_path:  '/home/bingxing2/home/scx6811/Ocean_AI_model/sample_00/test'
+
+  # land mask
+  land_mask: !!bool True
+  land_mask_path: '/home/bingxing2/home/scx6811/Ocean_AI_model/sample_00/land_mask.h5'
+
+  # normalization
+  normalize: !!bool True
+  normalization: 'zscore' # options zscore or minmax
+  global_mins_path:  '/home/bingxing2/home/scx6811/Ocean_AI_model/sample_00/train/global_mins.npy' 
+  global_maxs_path:  '/home/bingxing2/home/scx6811/Ocean_AI_model/sample_00/train/global_maxs.npy' 
+  global_means_path: '/home/bingxing2/home/scx6811/Ocean_AI_model/sample_00/train/global_means.npy' 
+  global_stds_path:  '/home/bingxing2/home/scx6811/Ocean_AI_model/sample_00/train/global_stds.npy' 
+
+  # orography
+  orography: !!bool True
+  orography_norm_zscore_path: '/home/bingxing2/home/scx6811/Ocean_AI_model/sample_00/orography_norm_zscore.h5'
+  orography_norm_maxmin_path: '/home/bingxing2/home/scx6811/Ocean_AI_model/sample_00/orography_norm_maxmin.h5'
+
+  # noise
+  add_noise: !!bool False
+  noise_std: 0
+
+  # crop
+  crop_size_x: None
+  crop_size_y: None
+
+  log_to_screen: !!bool True
+  log_to_wandb: !!bool True
+  save_checkpoint: !!bool True
+  plot_animations: !!bool False
+  
+#############################################
+afno_backbone: &afno_backbone
+  <<: *FULL_FIELD        # 继承FULL_FIELD锚点中的所有键值对
+  nettype: 'afno_backbone'
+  log_to_wandb: !!bool True
+
+  # Train params
+  lr: 5E-4
+  batch_size: 16 # 64
+  max_epochs: 100
+  scheduler: 'CosineAnnealingLR'
+
+  # Data params
+  fusion_3d_2d: False
+  in_channels: [0, 1 ,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ,21, 22, 23, 24, 25, 26, 27, 28, 29]
+  out_channels: [0, 1 ,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+  N_in_channels: 31 
+  N_out_channels: 25   
+  img_size_h: 720  # not used in afno
+  img_size_w: 1440 # not used in afno
+
+  patch_size_h: 5  # not used in afno
+  patch_size_w: 5  # not used in afno
+#############################################
+
+
+#############################################
+Masked_AE_Ocean: &Masked_AE_Ocean
+  <<: *FULL_FIELD
+  nettype: 'Masked_AE_Ocean'
+  log_to_wandb: !!bool True
+
+  # Train params
+  lr: 1E-3
+  batch_size: 64
+  max_epochs: 100
+  scheduler: 'CosineAnnealingLR'
+
+  # Data params
+  fusion_3d_2d: False 
+  N_in_channels: 31
+  N_out_channels: 25
+  in_channels: [0, 1 ,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ,21, 22, 23, 24, 25, 26, 27, 28, 29]
+  out_channels: [0, 1 ,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+  img_size_h: 720
+  img_size_w: 1440
+  patch_size_h: 8
+  patch_size_w: 8
+  mlp_ratio: 4.
+
+  # Encoder hyperparams
+  embed_dim: 512
+  depth: 1
+  num_heads: 16
+  # Decoder hyperparams
+  decoder_embed_dim: 512
+  decoder_depth: 1
+  decoder_num_heads: 16
+  # Koopman hyperparams
+  koopman_depth: 2
+  modes_h_ratio: 1
+  modes_w_ratio: 0.8
+  # Fourier hyperparams
+  drop_rate: 0.
+  drop_path_rate: 0.
+  sparsity_threshold: 0.01
+  hard_thresholding_fraction: 1.0
+  num_blocks: 8
+#############################################
+
+#############################################
+Masked_AE_fusion: &Masked_AE_fusion
+  <<: *FULL_FIELD
+  nettype: 'Masked_AE_fusion'
+  log_to_wandb: !!bool True
+
+  # Train params
+  lr: 1E-3
+  batch_size: 32 
+  max_epochs: 100
+  scheduler: 'CosineAnnealingLR'
+
+  # Data params
+  fusion_3d_2d: True
+  in_chans: 31
+  out_chans: 25
+  in_channels: [0, 1 ,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ,21, 22, 23, 24, 25, 26, 27, 28, 29]
+  out_channels: [0, 1 ,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+  img_size_h: 720
+  img_size_w: 1440
+  patch_size_h: 16
+  patch_size_w: 16
+  patch_size_d: 3
+  mlp_ratio: 4.
+
+  # Encoder 2d
+  in_chans_2d: 7
+  out_chans_2d: 1
+  # Encoder 3d
+  in_chans_3d: 4
+  out_chans_3d: 4
+  var_depth: 6
+  # Encoder hyperparams
+  embed_dim: 512
+  depth: 12 #16
+  num_heads: 16
+  # Decoder hyperparams
+  decoder_embed_dim: 1024 # 512
+  decoder_depth: 4 #8
+  decoder_num_heads: 16
+
+  # Fourier hyperparams
+  drop_rate: 0.
+  drop_path_rate: 0.
+  sparsity_threshold: 0.01
+  hard_thresholding_fraction: 1.0
+  num_blocks: 8

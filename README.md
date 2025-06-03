@@ -21,10 +21,16 @@
 ---
 
 ## News 🚀
+* **2025.06.03**: Training codes are released.
 * **2025.05.01**: OneForecast is accepted by [ICML 2025](https://icml.cc/).
 * **2025.02.15**: Inference codes and pre-trained weights are released.
 * **2025.02.03**: Codes for models are released.
 * **2025.02.01**: Paper is released on [ArXiv](http://arxiv.org/abs/2502.00338).
+
+## Notes
+
+The intact project is avilable on [Hugging Face](xx), you can find the pretrained models, test data on Hugging Face and put them in the same location.
+
 
 ## Quick Start
 
@@ -41,12 +47,6 @@ cd OneForecast
 conda env create -f environment.yml
 conda activate oneforecast
 ```
-
-### Pretrained Models
-
-| Model | OneDrive | Description
-| :--- | :--- | :----------
-|ckpt_OneForecast.tar | [model](https://1drv.ms/u/c/97084b8aaca71ff3/EWNTOv40tSVNorc_rJ-qg3oBRDiZWujcoOoVZoPOexUrJw?e=weecOd) | Pre-trained weights of OneForecast.
 
 
 ### Inference
@@ -132,7 +132,7 @@ Preparing the train, valid, and test data as follows:
 
 </div>
 <div align=center>
-<img src="img/fig_visual.jpg" width="1080">
+<img src="img/fig_vis.jpg" width="1080">
 </div>
 
 ### Regional Forecasts
