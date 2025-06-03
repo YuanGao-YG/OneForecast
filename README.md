@@ -6,6 +6,7 @@
  <div align="center">
  
 [![ArXiv](https://img.shields.io/badge/OneForecast-ArXiv-red.svg)](https://arxiv.org/abs/2502.00338)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-blue)](https://huggingface.co/YuanGao-YG/OneForecast/tree/main)
 
 </div>
 <div align=center>
@@ -29,7 +30,7 @@
 
 ## Notes
 
-The intact project is avilable on [Hugging Face](xx), you can find the pretrained models, test data on Hugging Face and put them in the same location.
+The intact project is avilable on [Hugging Face](https://huggingface.co/YuanGao-YG/OneForecast/tree/main), you can find the pretrained models, test data on Hugging Face and put them in the same location.
 
 
 ## Quick Start
