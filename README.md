@@ -86,10 +86,11 @@ Each h5 file includes a key named 'fields' with the shape [T, C, H, W] (T=1460/1
 
 **2. Model Training**
 
-
-- **Single GPU Training**
-- **Single-node Multi-GPU Training**
 - **Multi-node Multi-GPU Training**
+
+```
+sh train.sh
+```
 
 ### Regional Forecasts
 **1. Prepare Data**
@@ -112,9 +113,11 @@ Preparing the train, valid, and test data as follows:
 ```
 
 **2. Model Training**
-- **Single GPU Training**
-- **Single-node Multi-GPU Training**
+
 - **Multi-node Multi-GPU Training**
+```
+sh train_nng.sh
+```
 
 
 ## Performance
