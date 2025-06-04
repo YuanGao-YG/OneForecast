@@ -52,7 +52,32 @@ conda activate oneforecast
 
 ### Inference
 
-Preparing the test data as follows:
+1. Global Forecasts Inference
+
+(1) Preparing the test data as follows:
+
+```
+./data/
+|--global
+|  |--test
+|  |  |--2020.h5
+|  |--mean.npy
+|  |--std.npy
+```
+
+(2) Inference with 1-step supervised pretrained ckpt:
+```
+sh inference.sh
+```
+
+(3) Inference with finetuned pretrained ckpt:
+```
+sh inference_finetune.sh
+```
+
+2. Regional Forecasts Inference
+
+(1) Preparing the test data as follows:
 
 ```
 ./data/
@@ -66,19 +91,7 @@ Preparing the test data as follows:
 |  |  |--2020.h5
 ```
 
-1. Global Forecasts Inference
-
-Inference with 1-step supervised pretrained ckpt:
-```
-sh inference.sh
-```
-
-Inference with finetuned pretrained ckpt:
-```
-sh inference_finetune.sh
-```
-
-2. Regional Forecasts Inference
+(2) Inference with 1-step supervised pretrained ckpt:
 
 ```
 sh inference_nng.sh
