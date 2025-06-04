@@ -52,40 +52,80 @@ conda activate oneforecast
 
 ### Inference
 
-1. Global Inference
+Preparing the test data as follows:
 
+```
+./data/
+|--global
+|  |--test
+|  |  |--2020.h5
+|  |--mean.npy
+|  |--std.npy
+|--regional
+|  |--test
+|  |  |--2020.h5
+```
+
+1. Global Forecasts Inference
+
+Inference with 1-step supervised pretrained ckpt:
 ```
 sh inference.sh
 ```
 
-2. Regional Inference
+Inference with finetuned pretrained ckpt:
+```
+sh inference_finetune.sh
+```
 
-continue update
+2. Regional Forecasts Inference
+
+```
+sh inference_nng.sh
+```
    
 ## Training
+
 ### Global Forecasts
+
 **1. Prepare Data**
 
 Preparing the train, valid, and test data as follows:
 
 ```
-./data/global/
-|--train
-|  |--1959.h5
-|  |--1960.h5
-|  |--......
-|  |--2016.h5
-|  |--2017.h5
-|--valid
-|  |--2018.h5
-|  |--2019.h5
-|--test
-|  |--2020.h5
+./data/
+|--global
+|  |--train
+|  |  |--1959.h5
+|  |  |--1960.h5
+|  |  |--.......
+|  |  |--2016.h5
+|  |  |--2017.h5
+|  |--valid
+|  |  |--2017.h5
+|  |  |--2018.h5
+|  |--test
+|  |  |--2020.h5
+|  |--mean.npy
+|  |--std.npy
+|--regional
+|  |--train
+|  |  |--1959.h5
+|  |  |--1960.h5
+|  |  |--.......
+|  |  |--2016.h5
+|  |  |--2017.h5
+|  |--valid
+|  |  |--2017.h5
+|  |  |--2018.h5
+|  |--test
+|  |  |--2020.h5
 ```
 
 Each h5 file includes a key named 'fields' with the shape [T, C, H, W] (T=1460/1464, C=69, H=121, W=240)
 
-**2. Model Training**
+
+**2. Model Training with 1-step Supervision**
 
 - **Multi-node Multi-GPU Training**
 
@@ -93,7 +133,24 @@ Each h5 file includes a key named 'fields' with the shape [T, C, H, W] (T=1460/1
 sh train.sh
 ```
 
+**3. Model Training with Multi-step Supervision Finetune**
+
+- **Multi-node Multi-GPU Training**
+
+(1) Modify `./train_finetune.sh` file and `./config/Model.yaml` file.
+
+For instance, if you intent to finetune ckpt from 1-step ckpt (the start training time is 20250603-190101) with 2-step finetune for 10 eppchs, you can set `run_num='20250603-190101'`, `multi_steps_finetune=2`, `finetune_max_epochs=10`, `lr: 1E-6`. Please note that using a small learning rate (lr) to finetune model may contribute to convergence, you can adjust it according to your total batch size.
+
+If you intent to finetune ckpt from 2-step ckpt (the start training time is 20250603-190101) with 3-step finetune for 10 eppchs, you can set `run_num='20250603-190101'`, `multi_steps_finetune=3`, `finetune_max_epochs=10`, `lr: 1E-6`.
+
+(2) Run the following script:
+
+```
+sh train_finetune.sh
+```
+
 ### Regional Forecasts
+
 **1. Prepare Data**
 
 Preparing the train, valid, and test data as follows:
@@ -113,13 +170,22 @@ Preparing the train, valid, and test data as follows:
 |  |--2020.h5
 ```
 
+Each h5 file includes a key named 'fields' with the shape [T, C, H, W] (T=1460/1464, C=69, H=721, W=1440)
+
+
 **2. Model Training**
 
 - **Multi-node Multi-GPU Training**
+
+(1) Modify `./train_nng.sh` file and `./config/Model_nng.yaml` file.
+
+Before training the regional model, a pretrained global ckpt is necessary. For instance, if you intent to train the regional model using global model (the start training time is 20250603-190101) as forecing, you can set `run_num='20250603-190101'`, `multi_steps_finetune=1`, `finetune_max_epochs=200`, `lr: 1E-3`. You can also adjust the learning rate (lr) according to your total batch size.
+
+(2) Run the following script:
+
 ```
 sh train_nng.sh
 ```
-
 
 ## Performance
 ### Global Forecasts
