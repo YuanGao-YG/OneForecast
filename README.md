@@ -22,7 +22,7 @@
 ---
 
 ## News 🚀
-* **2025.06.03**: Training codes are released (More details will be updated soon).
+* **2025.06.03**: Training codes are released.
 * **2025.05.01**: OneForecast is accepted by [ICML 2025](https://icml.cc/).
 * **2025.02.15**: Inference codes and pre-trained weights are released.
 * **2025.02.03**: Codes for models are released.
@@ -108,18 +108,6 @@ Preparing the train, valid, and test data as follows:
 |  |  |--2020.h5
 |  |--mean.npy
 |  |--std.npy
-|--regional
-|  |--train
-|  |  |--1959.h5
-|  |  |--1960.h5
-|  |  |--.......
-|  |  |--2016.h5
-|  |  |--2017.h5
-|  |--valid
-|  |  |--2017.h5
-|  |  |--2018.h5
-|  |--test
-|  |  |--2020.h5
 ```
 
 Each h5 file includes a key named 'fields' with the shape [T, C, H, W] (T=1460/1464, C=69, H=121, W=240)
@@ -156,18 +144,33 @@ sh train_finetune.sh
 Preparing the train, valid, and test data as follows:
 
 ```
-./data/regional/
-|--train
-|  |--1959.h5
-|  |--1960.h5
-|  |--......
-|  |--2016.h5
-|  |--2017.h5
-|--valid
-|  |--2018.h5
-|  |--2019.h5
-|--test
-|  |--2020.h5
+./data/
+|--global
+|  |--train
+|  |  |--1959.h5
+|  |  |--1960.h5
+|  |  |--.......
+|  |  |--2016.h5
+|  |  |--2017.h5
+|  |--valid
+|  |  |--2017.h5
+|  |  |--2018.h5
+|  |--test
+|  |  |--2020.h5
+|  |--mean.npy
+|  |--std.npy
+|--regional
+|  |--train
+|  |  |--1959.h5
+|  |  |--1960.h5
+|  |  |--.......
+|  |  |--2016.h5
+|  |  |--2017.h5
+|  |--valid
+|  |  |--2017.h5
+|  |  |--2018.h5
+|  |--test
+|  |  |--2020.h5
 ```
 
 Each h5 file includes a key named 'fields' with the shape [T, C, H, W] (T=1460/1464, C=69, H=721, W=1440)
