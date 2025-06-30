@@ -6,7 +6,7 @@
  <div align="center">
  
 [![ArXiv](https://img.shields.io/badge/OneForecast-ArXiv-red.svg)](https://arxiv.org/abs/2502.00338)
-[![Paper](https://img.shields.io/badge/OneRestore-Paper-yellow.svg)](https://openreview.net/forum?id=9xGSeVolcN)
+[![Paper](https://img.shields.io/badge/OneForecast-Paper-yellow.svg)](https://openreview.net/forum?id=9xGSeVolcN)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-blue)](https://huggingface.co/YuanGao-YG/OneForecast/tree/main)
 
 </div>
