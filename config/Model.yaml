@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 full_field: &FULL_FIELD
   loss: 'l2'
-  max_epochs: 20
+  max_epochs: 200
   batch_size: 32
   num_data_workers: 4
   dt: 1                     # how many timesteps ahead the model will predict
