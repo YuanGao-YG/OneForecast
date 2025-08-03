@@ -5,7 +5,7 @@
 
  <div align="center">
  
-[![ArXiv](https://img.shields.io/badge/OneForecast-ArXiv-red.svg)](https://arxiv.org/abs/2502.00338)
+[![arXiv](https://img.shields.io/badge/OneForecast-arXiv-red.svg)](https://arxiv.org/abs/2502.00338)
 [![Paper](https://img.shields.io/badge/OneForecast-Paper-yellow.svg)](https://openreview.net/forum?id=9xGSeVolcN)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-blue)](https://huggingface.co/YuanGao-YG/OneForecast/tree/main)
 
@@ -27,7 +27,7 @@
 * **2025.05.01**: OneForecast is accepted by [ICML 2025](https://icml.cc/).
 * **2025.02.15**: Inference codes and pre-trained weights are released.
 * **2025.02.03**: Codes for models are released.
-* **2025.02.01**: Paper is released on [ArXiv](http://arxiv.org/abs/2502.00338).
+* **2025.02.01**: Paper is released on [arXiv](http://arxiv.org/abs/2502.00338).
 
 ## Notes
 
