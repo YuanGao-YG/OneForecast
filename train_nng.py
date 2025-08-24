@@ -268,7 +268,7 @@ class Trainer():
 
             if self.params.enable_amp:
                 self.gscaler.update()
-            break
+            # break
 
             tr_time += time.time() - tr_start
 
@@ -302,8 +302,8 @@ class Trainer():
       
         with torch.no_grad():
             for i, data in enumerate(self.valid_data_loader, 0):
-                if i > 1:
-                    break
+                # if i > 1:
+                #     break
                 inp, inp2, tar = map(lambda x: x.to(self.device, dtype=torch.float), data)
                 # gen = self.model(inp)
                 num_steps = params.multi_steps_finetune
