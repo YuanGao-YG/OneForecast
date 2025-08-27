@@ -136,16 +136,6 @@ class Trainer():
             tr_time, data_time, step_time, train_logs = self.train_one_epoch() 
             valid_time, valid_logs = self.validate_one_epoch()
 
-            if self.params.scheduler == 'CosineAnnealingLR':
-                self.scheduler.step()
-                if self.epoch >= self.params.max_epochs:
-                    logging.info('Time taken for epoch {} is {} sec'.format(epoch + 1, time.time() - start))
-                    logging.info('lr for epoch {} is {}'.format(epoch + 1, self.optimizer.param_groups[0]['lr']))
-                    logging.info('train data time={}, train per epoch time={}, train per step time={}, valid time={}'.format(data_time, tr_time, step_time, valid_time))
-                    logging.info('Train loss: {}. Valid loss: {}'.format(train_logs['train_loss'], valid_logs['valid_loss']))
-                    logging.info("Terminating training after reaching params.max_epochs while LR scheduler is set to CosineAnnealingLR")
-                    exit()
-
             if self.world_rank == 0:
                 if self.params.save_checkpoint:
                     # checkpoint at the end of every epoch
@@ -160,6 +150,9 @@ class Trainer():
                 logging.info('lr for epoch {} is {}'.format(epoch + 1, self.optimizer.param_groups[0]['lr']))
                 logging.info('train data time={}, train per epoch time={}, train per step time={}, valid time={}'.format(data_time, tr_time, step_time, valid_time))
                 logging.info('Train loss: {}. Valid loss: {}'.format(train_logs['train_loss'], valid_logs['valid_loss']))
+
+            if self.params.scheduler == 'CosineAnnealingLR':
+                self.scheduler.step()
 
             torch.cuda.empty_cache()
             gc.collect()
