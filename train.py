@@ -104,7 +104,6 @@ class Trainer():
             params['max_epochs'] = params.finetune_max_epochs
 
         self.epoch = self.startEpoch
-
       
         if params.scheduler == 'CosineAnnealingLR': 
             self.scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
