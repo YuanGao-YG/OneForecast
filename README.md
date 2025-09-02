@@ -248,7 +248,14 @@ sh train_nng.sh
 }
 ```
 
-#### If you have any questions, please contact [yuangao24@mails.tsinghua.edu.cn](mailto:yuangao24@mails.tsinghua.edu.cn), [wuhao2022@mail.ustc.edu.cn](mailto:wuhao2022@mail.ustc.edu.cn).
+## Acknowledgement
 
-**Acknowledgment:** This code is based on the [NVIDIA modulus](https://github.com/NVIDIA/modulus).
+We appreciate the following open-sourced repositories for their valuable code base:
+
+[https://github.com/NVlabs/FourCastNet](https://github.com/NVlabs/FourCastNet)
+
+[https://github.com/NVIDIA/physicsnemo](https://github.com/NVIDIA/physicsnemo)
+
+
+#### If you have any questions, please contact [yuangao24@mails.tsinghua.edu.cn](mailto:yuangao24@mails.tsinghua.edu.cn), [wuhao2022@mail.ustc.edu.cn](mailto:wuhao2022@mail.ustc.edu.cn).
 
