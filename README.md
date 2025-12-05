@@ -23,8 +23,6 @@
 ---
 
 
-
----
 >**OneForecast: A Universal Framework for Global and Regional Earth System Forecasting**<br>  [Yuan Gao](https://scholar.google.com.hk/citations?hl=zh-CN&user=4JpRnU4AAAAJ&view_op=list_works&sortby=pubdate)<sup>† </sup>, [Hao Wu](https://alexander-wu.github.io/)<sup>† </sup><sup>‡ </sup>, [Fan Zhang](https://scholar.google.com.hk/citations?user=KbC_-7cAAAAJ&hl=zh-CN&oi=sra), [Haoxuan Li](https://scholar.google.com.hk/citations?user=gtDqiucAAAAJ&hl=zh-CN&oi=ao), [Fan Xu](https://scholar.google.com.hk/citations?hl=zh-CN&user=qfMSkBgAAAAJ&view_op=list_works&sortby=pubdate), [Qingsong Wen](https://sites.google.com/site/qingsongwen8/), [Huanshuo Dong](https://scholar.google.com.hk/citations?hl=zh-CN&user=VdGW_n8AAAAJ&view_op=list_works&sortby=pubdate), [Yibo Yan](https://scholar.google.com.hk/citations?hl=zh-CN&user=26yPSEcAAAAJ&view_op=list_works&sortby=pubdate), [Xuming Hu](https://xuminghu.github.io/), [Jiahao Wu](https://scholar.google.com/citations?user=GuQ10J4AAAAJ&hl=zh-CN), [Qing Li](https://www4.comp.polyu.edu.hk/~csqli/), [Hui Xiong](https://scholar.google.com.hk/citations?hl=zh-CN&user=cVDF1tkAAAAJ&view_op=list_works&sortby=pubdate), [Zhouchen Lin](https://scholar.google.com.hk/citations?user=TanjFwoAAAAJ&hl=zh-CN&oi=ao), [Kun Wang](https://scholar.google.com/citations?user=UnyqjWQAAAAJ&hl=en&oi=sra)<sup>* </sup>,  [Xiaomeng Huang](http://faculty.dess.tsinghua.edu.cn/huangxiaomeng/en/index.htm)<sup>* </sup> <br>
 († Equal contribution, ‡ Project lead and technical guidance, * Corresponding author)<br>
 
