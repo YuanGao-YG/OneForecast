@@ -29,7 +29,7 @@
 ---
 
 ## News 🚀
-* **2025.12.05**: We extend this framework to cross-sphere modeling by introducing a causally-coupled ocean-atmosphere strategy. We will update the corrsponding codes after the expanded version of the paper is accepted 
+* **2025.12.05**: We extend this framework to cross-sphere modeling by introducing a causally-coupled ocean-atmosphere strategy.
 * **2025.06.03**: Training codes are released.
 * **2025.05.01**: OneForecast is accepted by [ICML 2025](https://icml.cc/).
 * **2025.02.15**: Inference codes and pre-trained weights are released.
@@ -104,6 +104,11 @@ sh inference_finetune.sh
 ```
 sh inference_nng.sh
 ```
+
+
+3. Causally-coupled Ocean-atmosphere Forecasting Inference
+
+We will release the corrsponding codes after the expanded version of the paper is accepted. 
    
 ## Training
 
@@ -158,7 +163,9 @@ If you intent to finetune ckpt from 2-step ckpt (the start training time is 2025
 sh train_finetune.sh
 ```
 
-### Regional Forecasts
+### Causally-coupled Ocean-atmosphere Forecasts
+
+We will release the corrsponding codes after the expanded version of the paper is accepted. 
 
 **1. Prepare Data**
 
@@ -211,6 +218,8 @@ Before training the regional model, a pretrained global ckpt is necessary. For i
 sh train_nng.sh
 ```
 
+### Regional Forecasts
+
 ## Performance
 ### Global Forecasts
 
@@ -234,6 +243,13 @@ sh train_nng.sh
 </div>
 <div align=center>
 <img src="img/fig_region.jpg" width="1080">
+</div>
+
+### Causally-coupled Ocean-atmosphere Forecasting
+
+</div>
+<div align=center>
+<img src="img/fig_ocean.jpg" width="1080">
 </div>
 
 ### Extreme Event Forecasts (Typhoon)
