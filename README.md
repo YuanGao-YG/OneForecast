@@ -164,7 +164,6 @@ sh train_finetune.sh
 ```
 
 ### Regional Forecasts 
-We will release the corrsponding codes after the expanded version of the paper is accepted. 
 
 **1. Prepare Data**
 
@@ -218,6 +217,9 @@ sh train_nng.sh
 ```
 
 ### Causally-coupled Ocean-atmosphere Forecasts
+
+We will release the corrsponding codes after the expanded version of the paper is accepted. 
+
 
 
 ## Performance
