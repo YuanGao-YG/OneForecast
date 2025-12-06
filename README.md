@@ -163,8 +163,7 @@ If you intent to finetune ckpt from 2-step ckpt (the start training time is 2025
 sh train_finetune.sh
 ```
 
-### Causally-coupled Ocean-atmosphere Forecasts
-
+### Regional Forecasts 
 We will release the corrsponding codes after the expanded version of the paper is accepted. 
 
 **1. Prepare Data**
@@ -218,7 +217,8 @@ Before training the regional model, a pretrained global ckpt is necessary. For i
 sh train_nng.sh
 ```
 
-### Regional Forecasts
+### Causally-coupled Ocean-atmosphere Forecasts
+
 
 ## Performance
 ### Global Forecasts
