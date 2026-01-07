@@ -136,10 +136,9 @@ Preparing the train, valid, and test data as follows:
 |  |--std.npy
 ```
 
-Each h5 file includes a key named 'fields' with the shape [T, C, H, W] (T=1460/1464, C=69, H=121, W=240)
+Each h5 file includes a key named 'fields' with the shape [T, C, H, W] (T=1460/1464, C=69, H=121, W=240). We relese all training data on the [Hugging Face](https://huggingface.co/YuanGao-YG/OneForecast/tree/main/data/global/train). The order of all variables is as follows:
 
-The order of all variables is as follows:
-
+```
 var_idex = {
         "Z50":0, "Z100":1, "Z150":2, "Z200":3, "Z250":4, "Z300":5, "Z400":6, "Z500":7, "Z600":8, "Z700":9, "Z850":10, "Z925":11, "Z1000":12,
         "Q50":13, "Q100":14, "Q150":15, "Q200":16, "Q250":17, "Q300":18, "Q400":19, "Q500":20, "Q600":21, "Q700":22, "Q850":23, "Q925":24, "Q1000":25,
@@ -147,7 +146,8 @@ var_idex = {
         "U50":39, "U100":40, "U150":41, "U200":42, "U250":43, "U300":44, "U400":45, "U500":46, "U600":47, "U700":48, "U850":49, "U925":50, "U1000":51,
         "V50":52, "V100":53, "V150":54, "V200":55, "V250":56, "V300":57, "V400":58, "V500":59, "V600":60, "V700":61, "V850":62, "V925":63, "V1000":64,
         "U10M":65, "V10M":66, "T2M":67, "MSLP":68,
-} 
+}
+```
 
 
 **2. Model Training with 1-step Supervision**
