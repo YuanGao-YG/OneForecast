@@ -29,7 +29,7 @@
 ---
 
 ## News 🚀
-* **2026.01.07**: Proprocessed data (training and validing) for global weather forecasting is released on [Hugging Face](https://huggingface.co/YuanGao-YG/OneForecast/upload/main/data/global).
+* **2026.01.07**: Proprocessed data (training and validing) for global weather forecasting is released on [Hugging Face](https://huggingface.co/YuanGao-YG/OneForecast/tree/main/data/global).
 * **2025.12.05**: We extend this framework to cross-sphere modeling by introducing a causally-coupled ocean-atmosphere strategy.
 * **2025.06.03**: Training codes are released.
 * **2025.05.01**: OneForecast is accepted by [ICML 2025](https://icml.cc/).
