@@ -148,7 +148,7 @@ var_idex = {
         "U10M":65, "V10M":66, "T2M":67, "MSLP":68,
 }
 ```
-
+Regarding the meaning of abbreviated variables, for example, "Z50" means GEOPOTENTIAL Geopotential at 50 hPa.
 
 **2. Model Training with 1-step Supervision**
 
