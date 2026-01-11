@@ -277,11 +277,10 @@ We will release the corrsponding codes after the expanded version of the paper i
 ## Citation
 
 ```
-@article{gao2025oneforecast,
+@inproceedings{gaooneforecast,
   title={OneForecast: A Universal Framework for Global and Regional Weather Forecasting},
-  author={Gao, Yuan and Wu, Hao and Shu, Ruiqi and Dong, Huanshuo and Xu, Fan and Chen, Rui and Yan, Yibo and Wen, Qingsong and Hu, Xuming and Wang, Kun and others},
-  journal={arXiv preprint arXiv:2502.00338},
-  year={2025}
+  author={Gao, Yuan and Wu, Hao and Shu, Ruiqi and Xu, Fan and Chen, Rui Ray and Yan, Yibo and Wen, Qingsong and Hu, Xuming and Wang, Kun and Wu, Jiahao and others},
+  booktitle={Forty-second International Conference on Machine Learning}
 }
 ```
 
