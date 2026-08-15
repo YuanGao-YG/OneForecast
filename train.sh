@@ -1,6 +1,6 @@
 wandb_group='oneforecast'
 yaml_config='config/Model.yaml'
-config='OneForecast' # ''Masked_AE_Ocean 
+config='OneForecast'
 batch_size=16
 run_num=$(date "+%Y%m%d-%H%M%S")
 multi_steps_finetune=1
